@@ -17,14 +17,12 @@
   ],
   "author": "JAY",
   "license": "MIT",
-  "dependencies": {
-    "vite": "^3.0.8"
-  },
   "repository": {
     "type": "git",
     "url": "git@github.com:dang0705/wechat-oa-auth.git"
   },
   "devDependencies": {
+    "vite": "^3.0.8",
     "@vitejs/plugin-legacy": "^2.0.1"
   }
 }

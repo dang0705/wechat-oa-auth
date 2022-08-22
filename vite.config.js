@@ -6,12 +6,5 @@ export default defineConfig({
       entry: resolve(__dirname, './index.js'),
       name: 'wechat-oa-auth'
     }
-  },
-  plugins: [
-    /*    legacy({
-      targets: ['chrome 52'],
-      additionalLegacyPolyfills: ['regenerator-runtime/runtime'],
-      corejs: true
-    })*/
-  ]
+  }
 });
