@@ -12,7 +12,6 @@ export async function getCode({
     './utils/splice-parameters'
   );
   const wechatAuthUrl = 'https://open.weixin.qq.com/connect/oauth2/authorize';
-
   const authConfigs = {
     appid,
     redirect_uri,
@@ -20,8 +19,13 @@ export async function getCode({
     scope,
     state
   };
-  if (isDev) return;
-
-  location.href =
+  const href =
     wechatAuthUrl + spliceParameters(authConfigs) + '#wechat_redirect';
+
+  if (isDev) {
+    console.log(href);
+    return;
+  }
+
+  location.href = href;
 }
