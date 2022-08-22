@@ -1,0 +1,30 @@
+{
+  "name": "wechat-oauth-by-frontend",
+  "version": "1.0.6",
+  "description": "a simple function for wechat oauth by frontend",
+  "main": "dist/wechat-oauth-by-frontend.mjs",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build"
+  },
+  "keywords": [
+    "weixin",
+    "wechat",
+    "wechat-oa"
+  ],
+  "author": "JAY",
+  "license": "MIT",
+  "dependencies": {
+    "vite": "^3.0.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dang0705/wechat-oa-auth.git"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^2.0.1"
+  }
+}
