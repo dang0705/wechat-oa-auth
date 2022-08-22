@@ -13,7 +13,8 @@
   "keywords": [
     "weixin",
     "wechat",
-    "wechat-oa"
+    "wechat-oa",
+    "wechat-auth"
   ],
   "author": "JAY",
   "license": "MIT",

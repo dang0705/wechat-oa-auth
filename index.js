@@ -5,7 +5,8 @@ const state = getUrlSearchParams('state') || '';
 export async function getCode({
   appid,
   redirect_uri = encodeURIComponent(location.href),
-  scope = 'snsapi_userinfo'
+  scope = 'snsapi_userinfo',
+  isDev
 }) {
   const { default: spliceParameters } = await import(
     './utils/splice-parameters'
@@ -19,6 +20,8 @@ export async function getCode({
     scope,
     state
   };
+  if (isDev) return;
+
   location.href =
     wechatAuthUrl + spliceParameters(authConfigs) + '#wechat_redirect';
 }
