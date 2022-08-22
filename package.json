@@ -2,7 +2,7 @@
   "name": "wechat-oauth-by-frontend",
   "version": "1.0.10",
   "description": "a simple function for wechat oauth by frontend",
-  "main": "dist/wechat-oauth-by-frontend.mjs",
+  "main": "dist/wechat-oauth-by-frontend.umd.js",
   "files": [
     "dist"
   ],
