@@ -1,11 +1,11 @@
-方便前端小伙伴开发微信公众号业务，获取code
+方便前端小伙伴开发微信公众号业务，获取 code
 
-usage:
+## 使用:
 
 import {code,getCode} from 'wechat-oauth-by-frontend'
 
-getCode({
-    appid:'your appid',
-    redirect_uri:'your redirect_uri',
-    scope:'wechat scope type "snsapi_userinfo / snsapi_base"'
+getCode({</br>
+appid:'your appid',</br>
+redirect_uri:'your redirect_uri',</br>
+scope:'wechat scope type "snsapi_userinfo / snsapi_base"'</br>
 })
