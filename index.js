@@ -22,10 +22,5 @@ export async function getCode({
   const href =
     wechatAuthUrl + spliceParameters(authConfigs) + '#wechat_redirect';
 
-  if (isDev) {
-    console.log(href);
-    return;
-  }
-
-  location.href = href;
+  isDev ? console.log(href) : (location.href = href);
 }
