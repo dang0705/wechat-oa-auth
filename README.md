@@ -2,10 +2,14 @@
 
 ## 使用:
 
+```
 import {code,getCode} from 'wechat-oauth-by-frontend'
 
-getCode({\
-appid:'your appid',\
-redirect_uri:'your redirect_uri',\
-scope:'wechat scope type "snsapi_userinfo / snsapi_base"'\
+!code
+? getCode({
+appid:'your appid',
+redirect_uri:'your redirect_uri',
+scope:'wechat scope type "snsapi_userinfo / snsapi_base"'
 })
+: getOpenid(code) /*your custom function 2 get openid*/
+```
